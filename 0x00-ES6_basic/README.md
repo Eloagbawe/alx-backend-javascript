@@ -71,3 +71,17 @@ Hint: The key here to define default parameter values for the function parameter
                         / ', with a per capita personal income of ' + budget.income + '. As of 2015, San Francisco'
                         / ' proper had a GDP of ' + budget.gdp + ', and a GDP per capita of ' + budget.capita + '.';
                 }
+
+7. Notice how the keys and the variable names are the same?
+
+Modify the following function’s budget object to simply use the keyname instead.
+
+                export default function getBudgetObject(income, gdp, capita) {
+                        const budget = {
+                        income: income,
+                        gdp: gdp,
+                        capita: capita,
+                        };
+
+                return budget;
+                }
