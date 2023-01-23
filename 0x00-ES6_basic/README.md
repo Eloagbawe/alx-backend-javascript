@@ -132,3 +132,16 @@ Modify the following function’s budget object to simply use the keyname instea
 
                 return array;
                 }
+
+11. Write a function named createEmployeesObject that will receive two arguments:
+
+                departmentName (String)
+                employees (Array of Strings)
+
+        The function should return an object with the following format:
+
+                {
+                        $departmentName: [
+                                $employees,
+                        ],
+                }
