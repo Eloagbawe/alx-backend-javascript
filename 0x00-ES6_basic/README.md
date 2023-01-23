@@ -45,3 +45,9 @@ Hint: The key here to define default parameter values for the function parameter
                         }
                 return initialNumber + expansion1989 + expansion2019;
                 }
+
+4. Modify the following function to return the number of arguments passed to it using the rest parameter syntax
+
+                export default function returnHowManyArguments() {
+
+                }
