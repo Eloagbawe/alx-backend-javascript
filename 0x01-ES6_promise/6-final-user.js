@@ -9,7 +9,7 @@ export default function handleProfileSignup(firstName, lastName, filename) {
       for (let i = 0; i < data.length; i += 1) {
         res.push({
           status: data[i].status,
-          value: data[i].value ? data[i].value : data[i].reason,
+          value: data[i].value ? data[i].value : `${data[i].reason}`,
         });
       }
       return res;
