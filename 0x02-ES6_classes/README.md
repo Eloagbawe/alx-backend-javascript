@@ -44,12 +44,12 @@ solutions to ES6 classes exercises
 
 5. Implement a class named Building:
 
-                Constructor attributes:
-                        sqft (Number)
-                Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
-                Implement a getter for each attribute.
-                Consider this class as an abstract class. And make sure that any class that extends from it should implement a method named evacuationWarningMessage.
-                        If a class that extends from it does not have a evacuationWarningMessage method, throw an error with the message Class extending Building must override evacuationWarningMessage
+        Constructor attributes:
+                sqft (Number)
+        Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
+        Implement a getter for each attribute.
+        Consider this class as an abstract class. And make sure that any class that extends from it should implement a method named evacuationWarningMessage.
+                If a class that extends from it does not have a evacuationWarningMessage method, throw an error with the message Class extending Building must override evacuationWarningMessage
 
 6. Import Building from 5-building.js.
 
@@ -64,8 +64,17 @@ solutions to ES6 classes exercises
 
 7. Implement a class named Airport:
 
-                Constructor attributes:
-                        name (String)
-                        code (String)
-                Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
-                The default string description of the class should return the airport code
+        Constructor attributes:
+                name (String)
+                code (String)
+        Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
+        The default string description of the class should return the airport code
+
+8. Implement a class named HolbertonClass:
+
+        Constructor attributes:
+                size (Number)
+                location (String)
+        Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
+        When the class is cast into a Number, it should return the size.
+        When the class is cast into a String, it should return the location.
