@@ -3,7 +3,7 @@ export default function cleanSet(set, startString) {
   if (startString !== undefined && startString !== ''
       && typeof startString === 'string' && set instanceof Set) {
     set.forEach((item) => {
-      if (item.startsWith(startString)) {
+      if (item !== undefined && item.startsWith(startString)) {
         const string = item.replace(startString, '');
         resultArray.push(string);
       }
