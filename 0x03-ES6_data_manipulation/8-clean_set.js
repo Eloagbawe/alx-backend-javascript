@@ -1,10 +1,10 @@
 export default function cleanSet(set, startString) {
   const resultArray = [];
-  startString = startString.toLowerCase();
-  if (startString !== '' && typeof startString === 'string' && set instanceof Set) {
+  const start = startString.toLowerCase();
+  if (start !== '' && typeof start === 'string' && set instanceof Set) {
     set.forEach((item) => {
-      if (item.startsWith(startString)) {
-        const string = item.replace(startString, '');
+      if (item.startsWith(start)) {
+        const string = item.replace(start, '');
         resultArray.push(string);
       }
     });
