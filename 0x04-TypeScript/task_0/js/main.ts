@@ -1,8 +1,8 @@
 interface Student {
-  firstName: String,
-  lastName: String,
-  age: Number,
-  location: String
+  firstName: string,
+  lastName: string,
+  age: number,
+  location: string
 };
 
 const student1: Student = {
@@ -31,6 +31,6 @@ array.forEach((student) => {
   const data2 = document.createElement('td');
   row.appendChild(data1);
   row.appendChild(data2);
-  data1.textContent = student.firstName.toString();
-  data2.textContent = student.location.toString();
+  data1.textContent = student.firstName;
+  data2.textContent = student.location;
 })
