@@ -1,4 +1,4 @@
-function displayMessage(d){
-    process.stdout.write(d + '\n');
+function displayMessage(d) {
+  process.stdout.write(`${d}\n`);
 }
-module.exports = displayMessage
+module.exports = displayMessage;
