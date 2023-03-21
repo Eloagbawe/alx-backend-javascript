@@ -11,7 +11,7 @@ class StudentsController {
       const keys = Object.keys(data).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
       keys.forEach((key) => {
         output.push(
-          `Number of students in ${key}: ${data[key].length}. List: ${data[key].join(', ')}`,
+          `Number of students in ${key}: ${data[key].length}. List: ${data[key].join(', ')}`
         );
       });
       res.end(output.join('\n'));
