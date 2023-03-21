@@ -1,8 +1,8 @@
-const fs = require('fs');
+import { readFile } from 'fs';
 
 function readDatabase(path) {
   return new Promise((resolve, reject) => {
-    fs.readFile(path, 'utf-8', (err, data) => {
+    readFile(path, 'utf-8', (err, data) => {
       if (err) {
         reject(err);
       } else {
@@ -38,4 +38,4 @@ function readDatabase(path) {
   });
 }
 
-module.exports = readDatabase;
+export default readDatabase;
