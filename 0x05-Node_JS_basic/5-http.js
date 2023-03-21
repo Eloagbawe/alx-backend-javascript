@@ -43,13 +43,13 @@ app.on('request', (req, res) => {
         const validResult = result.filter((item) => Object.keys(item).length !== 0);
         res.write(`Number of students: ${validResult.length}\n`);
         const resultArr = Array.from(dataSet);
-        resultArr.forEach((value, idx, resultArr) => {
+        resultArr.forEach((value) => {
           const arr = validResult.filter((item) => item.field === value);
           const firstNames = arr.map((item) => item.firstname);
-          res.write(`Number of students in ${value}: ${arr.length}. List: ${firstNames.join(', ')}`);
-          if (idx !== resultArr.length - 1) {
-            res.write('\n');
-          }
+          res.write(`Number of students in ${value}: ${arr.length}. List: ${firstNames.join(', ')}\n`);
+          // if (idx !== resultArr.length - 1) {
+          //   res.write('\n');
+          // }
         });
         return data;
       } catch (err) {
