@@ -1,8 +1,9 @@
-const fs = require('fs/promises');
+// const fs = require('fs/promises');
+const fs = require('fs');
 
 async function countStudents(path) {
   try {
-    const data = await fs.readFile(path, 'utf8');
+    const data = await fs.promises.readFile(path, 'utf8');
     const dataArray = data.toString().split('\n').map((e) => e.trim())
       .map((e) => e.split(',').map((e) => e.trim()));
     const dataKeys = dataArray.shift();
@@ -29,6 +30,7 @@ async function countStudents(path) {
       const firstNames = arr.map((item) => item.firstname);
       console.log(`Number of students in ${value}: ${arr.length}. List: ${firstNames.join(', ')}`);
     });
+    return data;
   } catch (err) {
     throw new Error('Cannot load the database');
   }
