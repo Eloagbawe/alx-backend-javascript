@@ -5,8 +5,8 @@ const port = 7865;
 const app = express();
 
 app.get('/', (req, res) => {
-    res.end('Welcome to the payment system');
-})
+  res.send('Welcome to the payment system');
+});
 app.listen(port, () => {
-    console.log(`API available on localhost port ${port}`);
-})
+  console.log(`API available on localhost port ${port}`);
+});

@@ -8,14 +8,14 @@ describe("api index page", function() {
       if (res) {
         expect(res?.statusCode).to.equal(200);
       }
-    })
+    });
   });
   it("test correct output", function() {
     request.get('http://localhost:7685', (err, res, body) => {
       if (body) {
         expect(body?.text).to.equal('Welcome to the payment system');
       }
-    })
+    });
   });
 });
   
