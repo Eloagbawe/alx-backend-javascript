@@ -13,5 +13,6 @@ describe("sendPaymentRequestToApi", function() {
     expect(result.getCall(0).args[1]).to.equal(100);
     expect(result.getCall(0).args[2]).to.equal(20);
     expect(result.withArgs('SUM', 100, 20).calledOnce).to.be.true;
+    Utils.calculateNumber.restore()
   });
 });
